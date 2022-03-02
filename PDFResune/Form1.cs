@@ -38,6 +38,7 @@ namespace PDFResune
             Paragraph workexperience = new Paragraph("EXPERIENCE\n" + output.WorkExperience);
             Paragraph education = new Paragraph("EDUCATION\n" + output.Education);
             Paragraph certification = new Paragraph("CERTIFICATION\n" + output.Certification);
+            Paragraph signature = new Paragraph("\n\n\n"+output.Signature );
 
             name.Font.Size = 20;
             name.Alignment = Element.ALIGN_CENTER;
@@ -45,6 +46,8 @@ namespace PDFResune
             address.Alignment = Element.ALIGN_CENTER;
             contactnumber.Alignment = Element.ALIGN_CENTER;
             emailaddress.Alignment = Element.ALIGN_CENTER;
+            signature.Alignment = Element.ALIGN_RIGHT;
+
 
 
             mypdfresume.Add(name);
@@ -57,6 +60,7 @@ namespace PDFResune
             mypdfresume.Add(workexperience);
             mypdfresume.Add(education);
             mypdfresume.Add(certification);
+            mypdfresume.Add(signature);
 
             mypdfresume.Close();
             MessageBox.Show("Successfuly");
@@ -73,6 +77,8 @@ namespace PDFResune
             public string WorkExperience { get; set; }
             public string Education { get; set; }
             public string Certification { get; set; }
+            public string Signature { get; set; }
+
 
 
         }
