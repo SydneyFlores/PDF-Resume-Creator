@@ -25,11 +25,24 @@ namespace PDFResune
         private void Convert_Click(object sender, EventArgs e)
         {
             mypdfInfo output = JsonConvert.DeserializeObject<mypdfInfo>(File.ReadAllText("Resume.json"));
-            MessageBox.Show(output.FullName.ToString());
+            Document mypdfresume = new Document();
+            PdfWriter.GetInstance(mypdfresume, new FileStream("FLORES_MHARSYDNEY.pdf", FileMode.Create));
+            mypdfresume.Open();
+            Paragraph name = new Paragraph(output.FullName);
+            Paragraph Address = new Paragraph(output.Age);
+            Paragraph age = new Paragraph(output.Address);
+
+            mypdfresume.Add(name);
+            mypdfresume.Add(Address);
+            mypdfresume.Add(Address);
+
+            mypdfresume.Close();
         }
         public class mypdfInfo
         {
             public string FullName { get; set; }
+            public string Age { get; set; }
+            public string Address { get; set; }
         }
     }
 }

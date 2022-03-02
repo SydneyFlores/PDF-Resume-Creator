@@ -1,3 +1,14 @@
 {
-    "FullName": "Mhar Sydney Flores"
+    "FullName": "Mhar Sydney Flores",
+    "Age": "22",
+    "Address": "Pook Palaris, Diliman Quezon City",
+    "ContactNumber": "09613112780",
+    "EmailAddress": "mharsydney@gmail.com",
+    "Objective": "To work in a dynamic professional environment with a growing organization and utilize my creativity and innovative thinking for benefit of the organization and myself.",
+    "Skills": "Tech Support, Security, Web Development, Application Development",
+    "WorkExperience": "Senior IT Specialist Jan 2018–Present, IT Support Specialist Dec 2015–Dec 2017 Junior Desktop Support Engineer Jan 2014–Dec 2015",
+    "Education": "BS Computer Engineering PUP",
+    "Certification": "2016, CompTIA A+, 2019, MS Server"
+    
+
 }
