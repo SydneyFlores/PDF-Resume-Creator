@@ -33,7 +33,7 @@ namespace PDFResune
             Paragraph address = new Paragraph(output.Address);
             Paragraph contactnumber = new Paragraph(output.ContactNumber);
             Paragraph emailaddress = new Paragraph(output.EmailAddress +"\n\n\n");
-            Paragraph objective = new Paragraph("OBJECTIVE\n"+output.Objective);
+            Paragraph objective = new Paragraph("OBJECTIVE\n\t"+output.Objective);
             Paragraph skills = new Paragraph("SKILLS\n" + output.Skills);
             Paragraph workexperience = new Paragraph("EXPERIENCE\n" + output.WorkExperience);
             Paragraph education = new Paragraph("EDUCATION\n" + output.Education);
